@@ -1,0 +1,8 @@
+- name: Setup Network-File-System
+  hosts: all
+  vars:
+    - become: yes
+  
+  roles:
+    - update-system
+    - nfs

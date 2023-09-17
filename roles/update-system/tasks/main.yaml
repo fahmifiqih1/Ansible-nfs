@@ -1,0 +1,7 @@
+---
+
+- name: update & upgrade
+  ansible.builtin.apt:
+    update_cache: yes
+    upgrade: dist
+  become: "{{ become }}"
